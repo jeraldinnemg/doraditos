@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Mouse+Memoirs&family=Nunito:wght@300;500;600;800&display=swap" rel="stylesheet">
+    <!-- Fullpage library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.css" integrity="sha512-zDKgq9gDZL1N3buxzFPZjHwqDOFsgTyhR0aJtXLFTIjEFovumXMaVeF6iBUZ/Rc4Mb0IqRrhqAY+RY7OCUBo6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/brands.js" integrity="sha384-sCI3dTBIJuqT6AwL++zH7qL8ZdKaHpxU43dDt9SyOzimtQ9eyRhkG3B7KMl6AO19" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Doraditos</title>
+</head>
+<body>
+    <div class="nav">
+        <button class="nav-toggle" aria-label="open navigation">
+            <span class="hamburger"></span>
+        </button>
+        <a href="#inicio" class="brand">
+            <img class="logo" width="150px" height="50px"src="img/websitelogo.svg" alt="logo">
+        </a>
+        <nav class="navMenu">
+
+            <ul id="menu" class="menu">
+                <li data-menuanchor="inicio" class="active">
+                    <a href="#inicio" class="ff-serif text-secundary uppercase fs-420"> Inicio</a>
+                </li>
+                <li data-menuanchor="productos">
+                    <a href="#producto" class="ff-serif text-secundary uppercase fs-420"> Productos</a>
+                </li>
+                <li data-menuanchor="contacto">
+                    <a href="#contacto" class="ff-serif text-secundary uppercase fs-420"> Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+
+    <main id="fullpage">
+            <header class="section header">
+                <div class="title-container">
+                    <h1 class="fs-900 uppercase"> 
+                        <span class="text-main">Tequeños</span>
+                        <span class="text-orange">deliciosos</span>
+                    </h1>
+                    <p class="fs-400 text-main fw-500">Pasapalos variados para compartir</p>
+                </div>
+                <div class="icon-container">
+                    <p><a href="#productos" class="text-secundary"><i class="fa-solid fa-chevron-down fs-700"></i></a></p>
+                </div>
+                <!-- Video -->
+                <video loop muted data-autoplay class="bg-video">
+                    <source src="img/video.mp4" type="video/mp4"> 
+                </video>
+            </header>
+            <section class="section products">
+
+                <article class="slide">
+                    <div class="product-info">
+                        <p class="product ta-left">
+                            <span class="text light fs-600">Teque</span>
+                            <span class="text-orange fs-600">Jumbos</span>
+                        </p>
+                        <p class="product-description ta-left fs-420">Más grandes y más deliciosos</p>
+                        <p class="price ta-left text-orange fs-420">75</p>
+                    </div>
+                </article>
+                <article class="slide">
+                    <div class="product-info">
+                        <p class="product ta-right">
+                            <span class="text-light fs-600">Teque</span>
+                            <span class="text-orange fs-600">Cumple</span>
+                        </p>
+                        <p class="product-description ta-right fs-420 text-light">Para celebrar la vida</p>
+                        <p class="price ta-right fs-420 text-orange">50</p>
+                    </div>
+                </article>
+                <article class="slide">
+                    <div class="product-info">
+                        <p class="product ta-right">
+                            <span class="text-light fs-600">Teque</span>
+                            <span class="text-orange fs-600">Congelados</span>
+                        </p>
+                        <p class="product-description ta-right fs-420 text-light">Para ahorrar tiempo en tus comidas</p>
+                        <p class="price ta-right fs-420 text-orange">25</p>
+                    </div>
+                </article>
+            </section> 
+
+            <footer class="section footer">
+                <h2 class="ff-serif uppercase fs-700 text-orange ls-300">Siguenos en redes</h2>
+                <p class="social-networks">
+                    <a href="https://www.facebook.com/" class="facebook bg-light fs-600"><i class="fab fa-facebook-square text-face"></i></a>
+                    <a href="https://www.instagram.com/doraditospf/" class="instagram bg-light fs-600 "><i class="fab fa-instagram text-insta"></i></a>
+                    <a href="https://twitter.com/?lang=es" class="twitter bg-light fs-600"><i class="fab fa-twitter-square text-twitter"></i></a>
+                </p>
+            </footer>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.js" integrity="sha512-JSVRnP8UFs0ieN/cvP9v4vmW1CotIaEKKN7W+4JaKNrllZolTv2aJfVGn4BFdfZ1jRZxgTAAaXWdlZbEm9iwFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
